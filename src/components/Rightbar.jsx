@@ -18,12 +18,14 @@ const Rightbar = () => {
   return (
     <Box
       sx={{
-        flex: "2",
-        display: { xs: "none", sm: "block" },
+        flex: { lg: "1.3" },
+        display: { xs: "none", sm: "none", md: "block" },
+        width: { md: "280px", lg: "360px" },
+        marginLeft: "0 !important",
       }}
       p={2}
     >
-      <Box width={360}>
+      <Box width={"100%"}>
         <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
           Online Friends
         </Typography>

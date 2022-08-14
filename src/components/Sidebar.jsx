@@ -19,14 +19,12 @@ import {
 import React from "react";
 
 const Sidebar = ({ setMode, mode }) => {
-//   const changeThemeMode = () => {
-//     mode === "light" ? "dark" : "light";
-//   };
   return (
     <Box
       sx={{
-        flex: "1",
+        // border: "2px solid red",
         display: { xs: "none", sm: "block" },
+        flex: { sm: "1.6", md: "1.5" },
       }}
       p={2}
     >
