@@ -57,7 +57,7 @@ const IconUserBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Navbar = () => {
+const Navbar = ({ mode }) => {
   const [open, setOpen] = useState(false);
   const HandleOpenMenu = () => setOpen(true);
 
@@ -78,7 +78,7 @@ const Navbar = () => {
           }}
         />
         <Search>
-          <InputBase placeholder="Search..." />
+          <InputBase placeholder="Search..." sx={{ color: mode && "#000" }} />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
