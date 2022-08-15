@@ -65,7 +65,7 @@ const Navbar = ({ mode }) => {
     <AppBar position="sticky" p={2}>
       <StyledToolbar>
         <Typography
-          variant="h6"
+          variant="h5"
           sx={{
             display: { xs: "none", sm: "block" },
           }}
