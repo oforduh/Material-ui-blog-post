@@ -46,6 +46,8 @@ const AddPost = () => {
     p: 3,
     borderRadius: 5,
     bgcolor: "background.paper",
+    width: { xs: "400px", sm: "550px", md: "800px" },
+    height: { xs: "400px", sm: "400px", md: "480px" },
   };
   const [openModel, setOpenModel] = useState(false);
   const handleOpenModal = () => setOpenModel(true);
@@ -75,7 +77,7 @@ const AddPost = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} width={800} height={480}>
+        <Box sx={style}>
           <Typography variant="h4" color="gray" textAlign="center">
             Create post
           </Typography>
@@ -106,7 +108,7 @@ const AddPost = () => {
             fullWidth
             variant="contained"
             aria-label="outlined primary button group"
-          > 
+          >
             <Button>Post</Button>
             <Button sx={{ width: "100px" }}>
               <DateRange />
