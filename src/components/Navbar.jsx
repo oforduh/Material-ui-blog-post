@@ -116,7 +116,7 @@ const Navbar = ({ mode }) => {
           horizontal: "right",
         }}
       >
-        <MenuItem>Profile</MenuItem>
+        <MenuItem>My Profile</MenuItem>
         <MenuItem>My account</MenuItem>
         <MenuItem>Logout</MenuItem>
       </Menu>
